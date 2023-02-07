@@ -3,3 +3,29 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+search_student:
+    path: /student/search/{id}
+    controller: App\Controller\SearchStudentGetController
+    methods: GET
+
+create_student:
+    path: /student/add
+    controller: App\Controller\StudentPutController
+    methods: PUT
+
+list_students:
+    path: /student/list
+    controller: App\Controller\ListStudentGetController
+    methods: GET
+
+delete_student:
+    path: /student/remove/{id}
+    controller: App\Controller\RemoveStudentDeleteController
+    methods: DELETE
+
+
+    
+
+
+
